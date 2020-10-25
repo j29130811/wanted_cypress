@@ -1,0 +1,23 @@
+{
+  "name": "wanted_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open" : "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j29130811/wanted_cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j29130811/wanted_cypress/issues"
+  },
+  "homepage": "https://github.com/j29130811/wanted_cypress#readme",
+  "dependencies": {
+    "cypress": "^5.4.0"
+  }
+}
