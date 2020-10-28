@@ -15,10 +15,10 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
+import 'cypress-xpath'
 
 Cypress.on('uncaught:exception', (err, runnable) => {
     expect(err.message).to.include('Cannot set property \'status\' of undefined')
