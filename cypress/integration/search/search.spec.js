@@ -1,4 +1,4 @@
-context("search autocomplete", ()=> {
+context("Search", ()=> {
     let search = 'QA'
 
     //search api에서 QA 검색 결과를 search.json으로 저장한다.
@@ -11,8 +11,7 @@ context("search autocomplete", ()=> {
         cy.fixture('search.json').as('searchJson')
     })
     
-    //search에 검색어 입력 후, 보이는 리스트를 확인한다.
-    it('Compare autocomplete results with api results', () => {
+    it('Search API의 Company 들의 Title이 출력되어야 한다.', () => {
         cy.get('[data-gnb-kind=search]')
             .click()
         cy.get('[type=search]')

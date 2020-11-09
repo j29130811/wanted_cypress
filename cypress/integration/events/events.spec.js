@@ -1,4 +1,4 @@
-context("search autocomplete", ()=> {
+context("Event", ()=> {
 
     //테스트 전에 api에서 리스트를 불러온다.
     before(()=>{
@@ -9,8 +9,7 @@ context("search autocomplete", ()=> {
         cy.fixture('events.json').as('eventsJson')
     })
 
-    // 이벤트 api에서 준 타이틀들이 보이는지 확인한다. 
-    it("Verify that API results are output",() => {
+    it("Events API의 Title이 출력되어야 한다.",() => {
         cy.visit('/events')
         cy.get('@eventsJson').then((result)=>{
             let res = result.data;
