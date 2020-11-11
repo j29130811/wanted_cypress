@@ -1,11 +1,9 @@
 version: 2.1
 orbs:
-  # import Cypress orb by specifying an exact version x.y.z
-  # or the latest version 1.x.x using "@1" syntax
-  cypress: cypress-io/cypress@1.26.0
+  cypress: cypress-io/cypress@1.0.0
 workflows:
   build:
     jobs:
       - cypress/run:
-          executor: cypress/browsers-chrome69
-          browser: chrome
+           build: "npm run build"
+           record: true
