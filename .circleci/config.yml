@@ -1,8 +1,10 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1.26.0
+  cypress: cypress/cypress@dev:0.0.1
 workflows:
   build:
     jobs:
+      # record Cypress tests on the Dashboard
       - cypress/run:
-          yarn: true
+          group: "all tests"
+          record: true
